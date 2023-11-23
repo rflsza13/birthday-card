@@ -1,7 +1,7 @@
 /* styles.css */
 body {
     font-family: 'Comic Sans MS', sans-serif;
-    background: linear-gradient(to bottom, #3498db, #ff7e5f);
+    background: linear-gradient(to bottom, SlateBlue, purple);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,7 +12,7 @@ body {
   
   .card-container {
     perspective: 1000px;
-    width: 80vw;
+    width: 70vw; /* Ajustei a largura do card-container para 70% da largura da tela */
     margin: 0 auto;
   }
   
@@ -21,16 +21,15 @@ body {
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 0.5s ease-in-out; /* Reduzi o tempo da transição e usei ease-in-out para uma animação mais suave */
+    transition: transform 0.5s ease-in-out;
   }
   
   .card:hover {
-    transform: scale(1.1); /* Alterei a transformação para pulsar o card */
+    transform: scale(1.1);
   }
   
   .header,
   .footer {
-    background-color: #3498db;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -74,6 +73,10 @@ body {
   
   /* Adicionando estilos para dispositivos móveis */
   @media screen and (max-width: 600px) {
+    .card-container {
+      width: 90vw;
+    }
+  
     .content {
       font-size: 18px;
     }
