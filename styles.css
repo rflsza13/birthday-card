@@ -1,88 +1,28 @@
-/* styles.css */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+p {
+  margin: 0 0;
+  position: absolute;
+  font: 16px Verdana;
+  color: #eee;
+  height: 25px;
+  top: calc( 100vh - 30px);
+  text-shadow: 0 0 2px white;
+}
+p a {
+  text-decoration: none;
+  color: #aaa;
+}
+span {
+  font-size: 11px;
+}
+p > a:first-of-type {
+  font-size: 20px;
+}
 body {
-    font-family: 'Comic Sans MS', sans-serif;
-    background: linear-gradient(to bottom, SlateBlue, purple);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
-  }
-  
-  .card-container {
-    perspective: 1000px;
-    width: 70vw; /* Ajustei a largura do card-container para 70% da largura da tela */
-    margin: 0 auto;
-  }
-  
-  .card {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .card:hover {
-    transform: scale(1.1);
-  }
-  
-  .header,
-  .footer {
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .content {
-    padding: 20px;
-    font-size: 24px;
-  }
-  
-  /* Adicionando estilo nerd para o texto */
-  .content p {
-    margin-bottom: 15px;
-  }
-  
-  .content p:last-child {
-    margin-bottom: 0;
-  }
-  
-  .content p::before {
-    content: '🚀';
-    margin-right: 5px;
-  }
-  
-  /* Estilo mais elaborado e nerd para o texto de aniversário */
-  .content p.nerdy {
-    font-family: 'Courier New', monospace;
-    font-size: 28px;
-    color: #00ff00;
-  }
-  
-  .content p.nerdy::before {
-    content: '🎮';
-    margin-right: 8px;
-  }
-  
-  .content p.nerdy::after {
-    content: '📚';
-    margin-left: 8px;
-  }
-  
-  /* Adicionando estilos para dispositivos móveis */
-  @media screen and (max-width: 600px) {
-    .card-container {
-      width: 90vw;
-    }
-  
-    .content {
-      font-size: 18px;
-    }
-  
-    .content p.nerdy {
-      font-size: 24px;
-    }
-  }
-  
+  overflow: hidden;
+  display: flex;
+}
