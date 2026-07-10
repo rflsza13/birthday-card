@@ -8,13 +8,14 @@ article {
   display: flex;
   align-items: center;
   height: 100vh;
-  text-align: justify;
+  text-align: left;
 }
 
 p {
   padding: 15px 10px;
   font-size: 20px;
   font-weight: 500;
+  line-height: 1.6;
 }
 
 img {
@@ -47,11 +48,11 @@ img {
 }
 
 .pink {
-  background-color: #cc0066;
-  color: lightpink;
+  background-color: darkslategray;
+  color: lightsteelblue;
 }
 
 .orange {
-  background-color: darkorange;
-  color: lightyellow;
+  background-color: darkgoldenrod;
+  color: lightgoldenrodyellow;
 }
